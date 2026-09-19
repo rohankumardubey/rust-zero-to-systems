@@ -1,0 +1,15 @@
+[book]
+authors = ["Rust Zero to Systems contributors"]
+language = "en"
+src = "src"
+title = "Rust Zero to Systems"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/OWNER/rust-zero-to-systems"
+edit-url-template = "https://github.com/OWNER/rust-zero-to-systems/edit/main/book/{path}"

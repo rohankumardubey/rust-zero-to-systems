@@ -1,0 +1,196 @@
+schema_version = 1
+rust_version = "1.98.1"
+rust_edition = "2024"
+last_reviewed = "2026-09-19"
+
+[[concept]]
+id = "core.hello_world"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/001_hello_world.rs"
+docs = "book/src/fundamentals/hello-world.md"
+prerequisites = []
+related = ["core.functions"]
+tested = true
+
+[[concept]]
+id = "core.variables_mutability"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/002_variables_mutability.rs"
+docs = "book/src/fundamentals/bindings-and-values.md"
+prerequisites = ["core.hello_world"]
+related = ["core.constants_statics", "core.shadowing"]
+tested = true
+
+[[concept]]
+id = "core.constants_statics"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/003_constants_statics_shadowing.rs"
+docs = "book/src/fundamentals/bindings-and-values.md"
+prerequisites = ["core.variables_mutability"]
+related = ["core.shadowing", "core.attributes_cfg"]
+tested = true
+
+[[concept]]
+id = "core.shadowing"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/003_constants_statics_shadowing.rs"
+docs = "book/src/fundamentals/bindings-and-values.md"
+prerequisites = ["core.variables_mutability"]
+related = ["core.type_aliases"]
+tested = true
+
+[[concept]]
+id = "core.scalar_types_literals_operators"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/004_scalar_types_literals_operators.rs"
+docs = "book/src/fundamentals/bindings-and-values.md"
+prerequisites = ["core.variables_mutability"]
+related = ["core.tuples_arrays_slices", "core.type_aliases"]
+tested = true
+
+[[concept]]
+id = "core.tuples_arrays_slices"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/005_tuples_arrays_slices.rs"
+docs = "book/src/fundamentals/compound-values-and-text.md"
+prerequisites = ["core.scalar_types_literals_operators"]
+related = ["core.strings"]
+tested = true
+
+[[concept]]
+id = "core.strings"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/006_str_and_string.rs"
+docs = "book/src/fundamentals/compound-values-and-text.md"
+prerequisites = ["core.tuples_arrays_slices"]
+related = ["core.functions"]
+tested = true
+
+[[concept]]
+id = "core.functions"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/007_functions_statements_expressions.rs"
+docs = "book/src/fundamentals/functions-and-control-flow.md"
+prerequisites = ["core.variables_mutability"]
+related = ["core.expressions", "core.function_pointers"]
+tested = true
+
+[[concept]]
+id = "core.expressions"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/007_functions_statements_expressions.rs"
+docs = "book/src/fundamentals/functions-and-control-flow.md"
+prerequisites = ["core.functions"]
+related = ["core.statements", "core.control_flow_patterns"]
+tested = true
+
+[[concept]]
+id = "core.statements"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/007_functions_statements_expressions.rs"
+docs = "book/src/fundamentals/functions-and-control-flow.md"
+prerequisites = ["core.functions"]
+related = ["core.expressions"]
+tested = true
+
+[[concept]]
+id = "core.control_flow_patterns"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/008_control_flow_patterns.rs"
+docs = "book/src/fundamentals/functions-and-control-flow.md"
+prerequisites = ["core.functions", "core.expressions"]
+related = ["core.structs_enums_methods"]
+tested = true
+
+[[concept]]
+id = "core.structs_enums_methods"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/009_structs_enums_methods.rs"
+docs = "book/src/fundamentals/data-types-and-modules.md"
+prerequisites = ["core.control_flow_patterns"]
+related = ["core.modules_visibility_paths"]
+tested = true
+
+[[concept]]
+id = "core.modules_visibility_paths"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/010_modules_visibility_paths.rs"
+docs = "book/src/fundamentals/data-types-and-modules.md"
+prerequisites = ["core.functions"]
+related = ["core.attributes_cfg"]
+tested = true
+
+[[concept]]
+id = "core.attributes_cfg"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/011_attributes_cfg_aliases_function_pointers.rs"
+docs = "book/src/fundamentals/attributes-and-callbacks.md"
+prerequisites = ["core.modules_visibility_paths"]
+related = ["core.type_aliases", "core.function_pointers"]
+tested = true
+
+[[concept]]
+id = "core.type_aliases"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/011_attributes_cfg_aliases_function_pointers.rs"
+docs = "book/src/fundamentals/attributes-and-callbacks.md"
+prerequisites = ["core.scalar_types_literals_operators"]
+related = ["core.function_pointers"]
+tested = true
+
+[[concept]]
+id = "core.function_pointers"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/011_attributes_cfg_aliases_function_pointers.rs"
+docs = "book/src/fundamentals/attributes-and-callbacks.md"
+prerequisites = ["core.functions"]
+related = ["core.type_aliases"]
+tested = true
