@@ -242,3 +242,111 @@ docs = "book/src/fundamentals/data-forms-and-divergence.md"
 prerequisites = ["core.control_flow_patterns"]
 related = ["core.functions"]
 tested = true
+
+[[concept]]
+id = "core.references_dereference"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/016_references_and_dereference.rs"
+docs = "book/src/fundamentals/references-and-iteration.md"
+prerequisites = ["core.functions"]
+related = ["core.tuples_arrays_slices"]
+tested = true
+
+[[concept]]
+id = "core.loops_ranges_if_let"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/017_loops_ranges_and_if_let.rs"
+docs = "book/src/fundamentals/references-and-iteration.md"
+prerequisites = ["core.control_flow_patterns"]
+related = ["core.expressions"]
+tested = true
+
+[[concept]]
+id = "cargo.packages_crates_use"
+category = "cargo-tooling"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/018_packages_crates_and_use.rs"
+docs = "book/src/fundamentals/packages-and-crates.md"
+prerequisites = ["core.modules_visibility_paths"]
+related = ["core.attributes_cfg"]
+tested = true
+
+[[concept]]
+id = "ownership.stack_heap"
+category = "ownership"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "02-ownership-borrowing/examples/001_stack_and_heap.rs"
+docs = "book/src/ownership/ownership-and-moves.md"
+prerequisites = ["core.strings"]
+related = ["ownership.moves", "ownership.partial_moves_drop_scopes"]
+tested = true
+
+[[concept]]
+id = "ownership.moves"
+category = "ownership"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "02-ownership-borrowing/examples/002_move_semantics.rs"
+docs = "book/src/ownership/ownership-and-moves.md"
+prerequisites = ["ownership.stack_heap"]
+related = ["ownership.copy_clone", "ownership.shared_borrows"]
+tested = true
+
+[[concept]]
+id = "ownership.copy_clone"
+category = "ownership"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "02-ownership-borrowing/examples/003_copy_and_clone.rs"
+docs = "book/src/ownership/ownership-and-moves.md"
+prerequisites = ["ownership.moves"]
+related = ["ownership.shared_borrows"]
+tested = true
+
+[[concept]]
+id = "ownership.shared_borrows"
+category = "ownership"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "02-ownership-borrowing/examples/004_shared_borrows.rs"
+docs = "book/src/ownership/borrowing-and-reborrowing.md"
+prerequisites = ["ownership.moves"]
+related = ["ownership.mutable_borrows_reborrowing"]
+tested = true
+
+[[concept]]
+id = "ownership.mutable_borrows_reborrowing"
+category = "ownership"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "02-ownership-borrowing/examples/005_mutable_borrows_and_reborrowing.rs"
+docs = "book/src/ownership/borrowing-and-reborrowing.md"
+prerequisites = ["ownership.shared_borrows"]
+related = ["ownership.partial_moves_drop_scopes"]
+tested = true
+
+[[concept]]
+id = "ownership.partial_moves_drop_scopes"
+category = "ownership"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "02-ownership-borrowing/examples/006_partial_moves_and_drop_scopes.rs"
+docs = "book/src/ownership/partial-moves-and-drop-scopes.md"
+prerequisites = ["ownership.moves"]
+related = ["ownership.stack_heap"]
+tested = true
