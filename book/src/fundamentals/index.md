@@ -10,6 +10,8 @@ Suggested order:
 4. [Functions and control flow](functions-and-control-flow.md)
 5. [Data types and modules](data-types-and-modules.md)
 6. [Attributes, configuration, and callbacks](attributes-and-callbacks.md)
+7. [Lexical forms and conversions](lexical-forms-and-conversions.md)
+8. [Additional data forms and divergence](data-forms-and-divergence.md)
 
-This is an intentionally partial Phase 2 inventory. See `coverage/rust-language.md` for the baseline still to reconcile.
+This is an intentionally partial Phase 2 inventory. References, raw pointers, union access, and deeper crate/package organization are deliberately deferred to the ownership and unsafe sequences; see `coverage/rust-language.md` for the baseline still to reconcile.
 

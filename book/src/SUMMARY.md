@@ -9,6 +9,8 @@
   - [Functions and control flow](fundamentals/functions-and-control-flow.md)
   - [Data types and modules](fundamentals/data-types-and-modules.md)
   - [Attributes, configuration, and callbacks](fundamentals/attributes-and-callbacks.md)
+  - [Lexical forms and conversions](fundamentals/lexical-forms-and-conversions.md)
+  - [Additional data forms and divergence](fundamentals/data-forms-and-divergence.md)
 - [Ownership and borrowing](ownership/index.md)
 - [Type system](type-system/index.md)
 - [Concurrency](concurrency/index.md)

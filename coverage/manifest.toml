@@ -194,3 +194,51 @@ docs = "book/src/fundamentals/attributes-and-callbacks.md"
 prerequisites = ["core.functions"]
 related = ["core.type_aliases"]
 tested = true
+
+[[concept]]
+id = "core.comments_raw_identifiers"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/012_comments_raw_identifiers.rs"
+docs = "book/src/fundamentals/lexical-forms-and-conversions.md"
+prerequisites = ["core.modules_visibility_paths"]
+related = ["core.attributes_cfg"]
+tested = true
+
+[[concept]]
+id = "core.conversions_casts"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/013_conversions_and_casts.rs"
+docs = "book/src/fundamentals/lexical-forms-and-conversions.md"
+prerequisites = ["core.scalar_types_literals_operators"]
+related = ["core.functions"]
+tested = true
+
+[[concept]]
+id = "core.unit_tuple_structs"
+category = "core-rust"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/014_unit_and_tuple_structs.rs"
+docs = "book/src/fundamentals/data-forms-and-divergence.md"
+prerequisites = ["core.structs_enums_methods"]
+related = ["core.type_aliases"]
+tested = true
+
+[[concept]]
+id = "core.never_type"
+category = "core-rust"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "01-core-rust/examples/015_never_type_and_diverging_control_flow.rs"
+docs = "book/src/fundamentals/data-forms-and-divergence.md"
+prerequisites = ["core.control_flow_patterns"]
+related = ["core.functions"]
+tested = true
