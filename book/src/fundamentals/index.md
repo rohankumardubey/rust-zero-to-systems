@@ -12,6 +12,8 @@ Suggested order:
 6. [Attributes, configuration, and callbacks](attributes-and-callbacks.md)
 7. [Lexical forms and conversions](lexical-forms-and-conversions.md)
 8. [Additional data forms and divergence](data-forms-and-divergence.md)
+9. [References and iteration](references-and-iteration.md)
+10. [Packages and crates](packages-and-crates.md)
 
-This is an intentionally partial Phase 2 inventory. References, raw pointers, union access, and deeper crate/package organization are deliberately deferred to the ownership and unsafe sequences; see `coverage/rust-language.md` for the baseline still to reconcile.
+This completes the introductory stable-language sequence. Ownership, lifetime relationships, raw pointers, and union access are deliberately deferred to their dedicated ownership and unsafe phases; see `coverage/rust-language.md` for the later complete-baseline audit.
 
