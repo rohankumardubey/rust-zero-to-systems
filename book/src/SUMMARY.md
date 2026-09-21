@@ -17,6 +17,8 @@
   - [Ownership and moves](ownership/ownership-and-moves.md)
   - [Borrowing and reborrowing](ownership/borrowing-and-reborrowing.md)
   - [Partial moves and drop scopes](ownership/partial-moves-and-drop-scopes.md)
+  - [Lifetime relationships](ownership/lifetime-relationships.md)
+  - [Smart pointers and interior mutability](ownership/smart-pointers-and-interior-mutability.md)
 - [Type system](type-system/index.md)
 - [Concurrency](concurrency/index.md)
 - [Async Rust](async/index.md)

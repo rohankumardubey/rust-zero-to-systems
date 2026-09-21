@@ -1,5 +1,10 @@
 [workspace]
-members = ["01-core-rust", "02-ownership-borrowing", "tools/coverage-check"]
+members = [
+    "01-core-rust",
+    "02-ownership-borrowing",
+    "07-lifetimes-smart-pointers",
+    "tools/coverage-check",
+]
 resolver = "3"
 
 [workspace.package]

@@ -37,6 +37,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "lifetimes-smart-pointers-lessons"
+version = "0.1.0"
+
+[[package]]
 name = "ownership-borrowing-lessons"
 version = "0.1.0"
 
