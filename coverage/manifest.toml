@@ -350,3 +350,75 @@ docs = "book/src/ownership/partial-moves-and-drop-scopes.md"
 prerequisites = ["ownership.moves"]
 related = ["ownership.stack_heap"]
 tested = true
+
+[[concept]]
+id = "lifetimes.annotations"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/001_lifetime_annotations.rs"
+docs = "book/src/ownership/lifetime-relationships.md"
+prerequisites = ["ownership.shared_borrows"]
+related = ["lifetimes.structs", "lifetimes.elision_static"]
+tested = true
+
+[[concept]]
+id = "lifetimes.structs"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/002_struct_lifetimes.rs"
+docs = "book/src/ownership/lifetime-relationships.md"
+prerequisites = ["lifetimes.annotations"]
+related = ["lifetimes.elision_static"]
+tested = true
+
+[[concept]]
+id = "lifetimes.elision_static"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/003_elision_and_static.rs"
+docs = "book/src/ownership/lifetime-relationships.md"
+prerequisites = ["lifetimes.annotations"]
+related = ["lifetimes.structs"]
+tested = true
+
+[[concept]]
+id = "smart_pointers.box"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/004_box.rs"
+docs = "book/src/ownership/smart-pointers-and-interior-mutability.md"
+prerequisites = ["ownership.moves"]
+related = ["smart_pointers.rc_weak"]
+tested = true
+
+[[concept]]
+id = "smart_pointers.rc_weak"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/005_rc_and_weak.rs"
+docs = "book/src/ownership/smart-pointers-and-interior-mutability.md"
+prerequisites = ["smart_pointers.box"]
+related = ["smart_pointers.refcell"]
+tested = true
+
+[[concept]]
+id = "smart_pointers.refcell"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/006_refcell.rs"
+docs = "book/src/ownership/smart-pointers-and-interior-mutability.md"
+prerequisites = ["ownership.mutable_borrows_reborrowing"]
+related = ["smart_pointers.rc_weak"]
+tested = true
