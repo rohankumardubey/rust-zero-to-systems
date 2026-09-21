@@ -19,6 +19,7 @@
   - [Partial moves and drop scopes](ownership/partial-moves-and-drop-scopes.md)
   - [Lifetime relationships](ownership/lifetime-relationships.md)
   - [Smart pointers and interior mutability](ownership/smart-pointers-and-interior-mutability.md)
+  - [RAII, copy-on-write, and non-lexical lifetimes](ownership/raii-cow-and-nll.md)
 - [Type system](type-system/index.md)
 - [Concurrency](concurrency/index.md)
 - [Async Rust](async/index.md)

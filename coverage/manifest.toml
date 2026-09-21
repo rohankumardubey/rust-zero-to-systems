@@ -422,3 +422,51 @@ docs = "book/src/ownership/smart-pointers-and-interior-mutability.md"
 prerequisites = ["ownership.mutable_borrows_reborrowing"]
 related = ["smart_pointers.rc_weak"]
 tested = true
+
+[[concept]]
+id = "ownership.raii_drop"
+category = "ownership"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/007_raii_and_drop.rs"
+docs = "book/src/ownership/raii-cow-and-nll.md"
+prerequisites = ["ownership.partial_moves_drop_scopes"]
+related = ["smart_pointers.refcell"]
+tested = true
+
+[[concept]]
+id = "smart_pointers.cell"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/008_cell.rs"
+docs = "book/src/ownership/raii-cow-and-nll.md"
+prerequisites = ["ownership.mutable_borrows_reborrowing"]
+related = ["smart_pointers.refcell"]
+tested = true
+
+[[concept]]
+id = "smart_pointers.cow"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/009_cow.rs"
+docs = "book/src/ownership/raii-cow-and-nll.md"
+prerequisites = ["lifetimes.annotations"]
+related = ["ownership.copy_clone"]
+tested = true
+
+[[concept]]
+id = "lifetimes.non_lexical"
+category = "lifetimes-smart-pointers"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/010_non_lexical_lifetimes.rs"
+docs = "book/src/ownership/raii-cow-and-nll.md"
+prerequisites = ["ownership.mutable_borrows_reborrowing"]
+related = ["lifetimes.annotations"]
+tested = true
