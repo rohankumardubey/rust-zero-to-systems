@@ -16,5 +16,24 @@ Structs that store references carry the same relationship in their type. Elision
 {{#include ../../../07-lifetimes-smart-pointers/examples/003_elision_and_static.rs}}
 ```
 
-Later Phase 3 material will cover multiple lifetime relationships, bounds, subtyping, variance, and higher-ranked trait bounds.
+Multiple lifetime parameters keep separate borrows separate, while an outlives bound states a
+specific validity relationship. Shared references are covariant in their lifetime, so a longer
+borrow can be shortened safely. Higher-ranked trait bounds use `for<'a>` when a callback must work
+for each borrow lifetime chosen by its caller. These rules describe relationships; none of them
+extends the lifetime of the underlying data.
 
+```rust
+{{#include ../../../07-lifetimes-smart-pointers/examples/011_multiple_lifetimes_and_bounds.rs}}
+```
+
+```rust
+{{#include ../../../07-lifetimes-smart-pointers/examples/012_lifetime_variance.rs}}
+```
+
+```rust
+{{#include ../../../07-lifetimes-smart-pointers/examples/013_higher_ranked_trait_bounds.rs}}
+```
+
+For the related pinning contract, see [Pin and Unpin](pin-and-unpin.md). Pinning is an address
+stability guarantee used by some abstractions; it does not keep the allocation alive independently
+of its owner.

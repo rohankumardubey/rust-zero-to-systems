@@ -1,13 +1,13 @@
 # Phase tracker
 
-Last updated: 2026-09-19
+Last updated: 2026-10-01
 
 | Phase | Scope | Status | Evidence / exit criteria |
 |---:|---|---|---|
 | 0 | Audit, architecture, persistent instructions | COMPLETE | `AGENTS.md`, project specification, decisions, and tracker exist; empty-repository/toolchain audit recorded. |
 | 1 | Workspace, tooling, mdBook, CI, coverage checker | COMPLETE | Workspace/tool configs, checker/tests, coverage baselines, book scaffold, README/roadmap, CI and Pages workflows; full local gate recorded below. |
 | 2 | Core Rust fundamentals | COMPLETE | 18 focused examples cover the introductory stable-language sequence; manifest/book/tests are linked. Ownership/lifetimes and unsafe-only material move to their dedicated phases. |
-| 3 | Ownership, borrowing, lifetimes, smart pointers | IN PROGRESS | Opening ownership and borrowing sequence is runnable, documented, and manifest-backed; lifetimes and smart pointers remain pending. |
+| 3 | Ownership, borrowing, lifetimes, smart pointers | COMPLETE | 20 focused examples across the ownership and lifetime lesson crates cover ownership/borrowing, lifetimes including bounds/variance/HRTBs, RAII, interior mutability, copy-on-write, and basic pinning; sources, book pages, tests, and manifest records are linked. `Arc`/thread-safety, async pinning, and unsafe pointer invariants continue in their dedicated phases. |
 | 4 | Generics, traits, type system, collections, iterators | NOT STARTED | Type-system and collection baselines reconciled. |
 | 5 | Errors, standard library, testing | NOT STARTED | Error patterns, std families, and testing techniques covered. |
 | 6 | Concurrency and memory model | NOT STARTED | Flagship concurrency sequence and maintained-library labs complete. |
@@ -35,3 +35,4 @@ Last updated: 2026-09-19
 - 2026-09-20 — Phase 3 ownership/borrowing tranche passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (4 tests), `cargo test -p ownership-borrowing-lessons --examples --locked` (6 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (29/29 inventoried concepts complete), and `mdbook build book`.
 - 2026-09-21 — Phase 3 lifetimes/smart-pointers tranche passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (5 tests), `cargo test -p lifetimes-smart-pointers-lessons --examples --locked` (6 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (35/35 inventoried concepts complete), and `mdbook build book`.
 - 2026-09-21 — Phase 3 RAII/interior-mutability tranche passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (5 tests), `cargo test -p lifetimes-smart-pointers-lessons --examples --locked` (10 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (39/39 inventoried concepts complete), and `mdbook build book`.
+- 2026-10-01 — Phase 3 advanced lifetimes/pinning completion passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (5 tests), `cargo test -p lifetimes-smart-pointers-lessons --examples --locked` (14 examples; 15 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (43/43 inventoried concepts complete), and `mdbook build book`.
