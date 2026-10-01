@@ -470,3 +470,51 @@ docs = "book/src/ownership/raii-cow-and-nll.md"
 prerequisites = ["ownership.mutable_borrows_reborrowing"]
 related = ["lifetimes.annotations"]
 tested = true
+
+[[concept]]
+id = "lifetimes.multiple_and_bounds"
+category = "lifetimes-smart-pointers"
+level = "advanced"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/011_multiple_lifetimes_and_bounds.rs"
+docs = "book/src/ownership/lifetime-relationships.md"
+prerequisites = ["lifetimes.annotations", "lifetimes.structs"]
+related = ["lifetimes.variance", "lifetimes.hrtb"]
+tested = true
+
+[[concept]]
+id = "lifetimes.variance"
+category = "lifetimes-smart-pointers"
+level = "advanced"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/012_lifetime_variance.rs"
+docs = "book/src/ownership/lifetime-relationships.md"
+prerequisites = ["lifetimes.multiple_and_bounds"]
+related = ["lifetimes.hrtb", "smart_pointers.cell"]
+tested = true
+
+[[concept]]
+id = "lifetimes.hrtb"
+category = "lifetimes-smart-pointers"
+level = "advanced"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/013_higher_ranked_trait_bounds.rs"
+docs = "book/src/ownership/lifetime-relationships.md"
+prerequisites = ["lifetimes.annotations"]
+related = ["lifetimes.multiple_and_bounds"]
+tested = true
+
+[[concept]]
+id = "smart_pointers.pin_unpin"
+category = "lifetimes-smart-pointers"
+level = "advanced"
+status = "complete"
+stability = "stable"
+source = "07-lifetimes-smart-pointers/examples/014_pin_and_unpin.rs"
+docs = "book/src/ownership/pin-and-unpin.md"
+prerequisites = ["smart_pointers.box", "lifetimes.annotations"]
+related = ["lifetimes.hrtb"]
+tested = true

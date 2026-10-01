@@ -10,3 +10,4 @@ move  ───────────────────> responsibility 
 
 Start with [ownership and moves](ownership-and-moves.md), then continue to [borrowing and reborrowing](borrowing-and-reborrowing.md).
 
+For the later topics, see [lifetime relationships](lifetime-relationships.md), [smart pointers and interior mutability](smart-pointers-and-interior-mutability.md), [RAII, copy-on-write, and non-lexical lifetimes](raii-cow-and-nll.md), and [Pin and Unpin](pin-and-unpin.md).
