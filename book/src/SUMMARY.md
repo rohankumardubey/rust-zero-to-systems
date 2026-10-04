@@ -22,6 +22,8 @@
   - [RAII, copy-on-write, and non-lexical lifetimes](ownership/raii-cow-and-nll.md)
   - [Pin and Unpin](ownership/pin-and-unpin.md)
 - [Type system](type-system/index.md)
+  - [Generics and traits](type-system/generics-and-traits.md)
+  - [Trait bounds, dispatch, and conversion APIs](type-system/bounds-dispatch-and-conversions.md)
 - [Concurrency](concurrency/index.md)
 - [Async Rust](async/index.md)
 - [Networking](networking/index.md)

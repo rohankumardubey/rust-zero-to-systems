@@ -518,3 +518,75 @@ docs = "book/src/ownership/pin-and-unpin.md"
 prerequisites = ["smart_pointers.box", "lifetimes.annotations"]
 related = ["lifetimes.hrtb"]
 tested = true
+
+[[concept]]
+id = "types.generics_functions_types"
+category = "type-system"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "03-types-generics-traits/examples/001_generic_functions_and_types.rs"
+docs = "book/src/type-system/generics-and-traits.md"
+prerequisites = ["core.functions", "core.structs_enums_methods"]
+related = ["traits.bounds_where"]
+tested = true
+
+[[concept]]
+id = "traits.definitions_defaults"
+category = "type-system"
+level = "beginner"
+status = "complete"
+stability = "stable"
+source = "03-types-generics-traits/examples/002_trait_definitions_and_defaults.rs"
+docs = "book/src/type-system/generics-and-traits.md"
+prerequisites = ["core.structs_enums_methods"]
+related = ["traits.bounds_where", "traits.associated_types"]
+tested = true
+
+[[concept]]
+id = "traits.bounds_where"
+category = "type-system"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "03-types-generics-traits/examples/003_trait_bounds_and_where.rs"
+docs = "book/src/type-system/generics-and-traits.md"
+prerequisites = ["types.generics_functions_types", "traits.definitions_defaults"]
+related = ["traits.static_dynamic_dispatch", "traits.into_asref"]
+tested = true
+
+[[concept]]
+id = "traits.associated_types"
+category = "type-system"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "03-types-generics-traits/examples/004_associated_types.rs"
+docs = "book/src/type-system/generics-and-traits.md"
+prerequisites = ["traits.definitions_defaults"]
+related = ["traits.bounds_where"]
+tested = true
+
+[[concept]]
+id = "traits.static_dynamic_dispatch"
+category = "type-system"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "03-types-generics-traits/examples/005_static_and_dynamic_dispatch.rs"
+docs = "book/src/type-system/bounds-dispatch-and-conversions.md"
+prerequisites = ["traits.bounds_where"]
+related = ["traits.definitions_defaults"]
+tested = true
+
+[[concept]]
+id = "traits.into_asref"
+category = "type-system"
+level = "intermediate"
+status = "complete"
+stability = "stable"
+source = "03-types-generics-traits/examples/006_conversion_and_borrowing_traits.rs"
+docs = "book/src/type-system/bounds-dispatch-and-conversions.md"
+prerequisites = ["types.generics_functions_types", "ownership.shared_borrows"]
+related = ["traits.bounds_where"]
+tested = true
