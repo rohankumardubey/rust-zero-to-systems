@@ -2,6 +2,7 @@
 members = [
     "01-core-rust",
     "02-ownership-borrowing",
+    "03-types-generics-traits",
     "07-lifetimes-smart-pointers",
     "tools/coverage-check",
 ]

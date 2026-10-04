@@ -1,6 +1,6 @@
 # Phase tracker
 
-Last updated: 2026-10-01
+Last updated: 2026-10-04
 
 | Phase | Scope | Status | Evidence / exit criteria |
 |---:|---|---|---|
@@ -8,7 +8,7 @@ Last updated: 2026-10-01
 | 1 | Workspace, tooling, mdBook, CI, coverage checker | COMPLETE | Workspace/tool configs, checker/tests, coverage baselines, book scaffold, README/roadmap, CI and Pages workflows; full local gate recorded below. |
 | 2 | Core Rust fundamentals | COMPLETE | 18 focused examples cover the introductory stable-language sequence; manifest/book/tests are linked. Ownership/lifetimes and unsafe-only material move to their dedicated phases. |
 | 3 | Ownership, borrowing, lifetimes, smart pointers | COMPLETE | 20 focused examples across the ownership and lifetime lesson crates cover ownership/borrowing, lifetimes including bounds/variance/HRTBs, RAII, interior mutability, copy-on-write, and basic pinning; sources, book pages, tests, and manifest records are linked. `Arc`/thread-safety, async pinning, and unsafe pointer invariants continue in their dedicated phases. |
-| 4 | Generics, traits, type system, collections, iterators | NOT STARTED | Type-system and collection baselines reconciled. |
+| 4 | Generics, traits, type system, collections, iterators | IN PROGRESS | Initial six executable lessons cover generic items, core traits/bounds, associated types, dispatch, and selected conversion traits. Collections and advanced type-system concepts remain. |
 | 5 | Errors, standard library, testing | NOT STARTED | Error patterns, std families, and testing techniques covered. |
 | 6 | Concurrency and memory model | NOT STARTED | Flagship concurrency sequence and maintained-library labs complete. |
 | 7 | Async Rust and Tokio | NOT STARTED | Language/runtime internals, Tokio, and tiny executor complete. |
@@ -36,3 +36,4 @@ Last updated: 2026-10-01
 - 2026-09-21 — Phase 3 lifetimes/smart-pointers tranche passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (5 tests), `cargo test -p lifetimes-smart-pointers-lessons --examples --locked` (6 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (35/35 inventoried concepts complete), and `mdbook build book`.
 - 2026-09-21 — Phase 3 RAII/interior-mutability tranche passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (5 tests), `cargo test -p lifetimes-smart-pointers-lessons --examples --locked` (10 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (39/39 inventoried concepts complete), and `mdbook build book`.
 - 2026-10-01 — Phase 3 advanced lifetimes/pinning completion passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (5 tests), `cargo test -p lifetimes-smart-pointers-lessons --examples --locked` (14 examples; 15 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (43/43 inventoried concepts complete), and `mdbook build book`.
+- 2026-10-04 — Phase 4 initial type-system tranche passed: `cargo fmt --check`, `cargo check --workspace --locked`, `cargo test --workspace --locked` (6 tests), `cargo test -p types-generics-traits-lessons --examples --locked` (6 lesson tests), `cargo clippy --workspace --all-targets --locked -- -D warnings`, coverage validation (49/49 inventoried concepts complete), `mdbook build book`, and `git diff --check`.
